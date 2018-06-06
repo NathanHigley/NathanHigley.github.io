@@ -64,24 +64,15 @@
             }
 
             .con {
-<<<<<<< HEAD
                  z-index:1;
                  min-height:20px;
                  position:relative;
                  width:850px;
-=======
-                 position:relative;
-                 height:50%;
-                 padding:10px;
-                 min-width:500px;
-                 max-width:850px;
->>>>>>> 98cd36863ee51c9982680d471ad4ec8ca42ec893
                  border:solid lightgrey 3px;
                  border-radius:5px;
             }
 
             .con .bg {
-<<<<<<< HEAD
                  z-index:-1;
                  position:absolute;
                  height:100%;
@@ -94,19 +85,6 @@
                  display:none;
             }
 
-=======
-                 position:absolute;
-                 height:100%;
-                 width:100%;
-                 background-color:grey;
-                 opacity:0.3;
-            }
-
-            .link{
-                 display:none;
-            }
-
->>>>>>> 98cd36863ee51c9982680d471ad4ec8ca42ec893
             .trans {
                  display:block;
             }
