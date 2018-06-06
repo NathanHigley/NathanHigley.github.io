@@ -28,13 +28,13 @@
                 padding: 8px 8px 8px 32px;
                 text-decoration: none;
                 font-size: 20px;
-                color: #818181;
+                color: grey;
                 display: block;
                 transition: 0.3s;
             }
 
             .sidenav a:hover {
-                color: #f1f1f1;
+                color: white;
             }
 
             .sidenav .closebtn {
@@ -45,16 +45,17 @@
                 transition:0.3s;
             }
 
-            #opennav {
+            .openbtn {
                 position:fixed;
                 left:10px;
                 top:10px;
                 font-size:30px;
                 cursor:pointer;
+                color:grey;
             }
 
-            #opennav:hover {
-                color: #f1f1f1;
+            .openbtn:hover {
+                color: white;
                 transition:0.3s;
             }
 
@@ -67,7 +68,8 @@
                  z-index:1;
                  min-height:20px;
                  position:relative;
-                 width:850px;
+                 min-width:650px;
+                 max-width:1000px;
                  border:solid lightgrey 3px;
                  border-radius:5px;
             }
