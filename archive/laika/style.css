@@ -46,7 +46,6 @@ body {
  .closebtn {
   position: absolute;
   top:0;
-  left: 0;
   font-size: 30px;
   transition:0.3s;
   cursor:pointer;
@@ -55,7 +54,7 @@ body {
 .openbtn {
   z-index:1;
   position:fixed;
-  top:5px;
+  top:0;
   font-size:30px;
   cursor:pointer;
   color:grey;
@@ -107,7 +106,7 @@ body {
   color:white;
   }
 
-.head, .player, #mainnav, .sidenav a {
+.head, .player, #mainnav, #bib, .sidenav a, .sidebib a {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select:none;
