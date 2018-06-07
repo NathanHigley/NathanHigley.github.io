@@ -12,15 +12,17 @@ function play() {
   audio.play();
   audio.muted = false;
 }
+
 function mute() {
   audio.muted = true;
 }
-function swap(page){
-   var id = page.dataset.id;
-   var list = document.querySelectorAll(".trans");
 
-   list.forEach(function(item) {
-      item.classList.remove("trans");
-   });
-   document.getElementById(id).classList.add("trans");
+function swap(page){
+  var id = page.dataset.id;
+  var list = document.querySelectorAll(".trans");
+
+  list.forEach(function(item) {
+    item.classList.remove("trans");
+  });
+  document.getElementById(id).classList.add("trans");
 }
