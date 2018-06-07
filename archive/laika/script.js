@@ -1,4 +1,5 @@
 function openNav() {
+  closeBib()
   document.getElementById("mainnav").style.width = "250px";
 }
 
@@ -7,6 +8,7 @@ function closeNav() {
 }
 
 function openBib() {
+  closeNav()
   document.getElementById("bib").style.width = "250px";
 }
 
