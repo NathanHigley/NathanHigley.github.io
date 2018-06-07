@@ -46,10 +46,11 @@ body {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 10px;
   font-size: 30px;
   transition:0.3s;
+  cursor:pointer;
   }
 
 .openbtn {
