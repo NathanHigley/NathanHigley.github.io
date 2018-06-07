@@ -122,12 +122,13 @@ body {
   }
 
 #mhead {
-  font-size:90;
+  font-size:70px;
   letter-spacing:2rem;
-  text-shadow: 0px 0px 16px white;
+  text-shadow: 0px 0px 12px white;
   }
 
 #shead {
+  font-size:25px;
   letter-spacing:0.5rem;
   text-shadow: 0px 0px 8px white;
   }
