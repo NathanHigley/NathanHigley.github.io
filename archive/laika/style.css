@@ -90,3 +90,12 @@
             .trans {
                  display:block;
             }
+
+            .player {
+              position:fixed;
+              display:inline-block;
+              font-size:30px;
+              bottom:5px;
+              text-decoration:none;
+              color:white;
+            }

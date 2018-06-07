@@ -6,6 +6,15 @@ function closeNav() {
   document.getElementById("mainnav").style.width = "0";
 }
 
+var audio = new Audio('endless.mp3');
+function play() {
+  audio.muted = true;
+  audio.play();
+  audio.muted = false;
+}
+function mute() {
+  audio.muted = true;
+}
 function swap(page){
    var id = page.dataset.id;
    var list = document.querySelectorAll(".trans");
