@@ -6,6 +6,14 @@ function closeNav() {
   document.getElementById("mainnav").style.width = "0";
 }
 
+function openBib() {
+  document.getElementById("bib").style.width = "250px";
+}
+
+function closeBib() {
+  document.getElementById("bib").style.width = "0px";
+}
+
 var audio = new Audio('endless.mp3');
 function play() {
   audio.muted = true;
