@@ -54,7 +54,7 @@ body {
 .openbtn {
   z-index:1;
   position:fixed;
-  top:0;
+  top:2px;
   font-size:30px;
   cursor:pointer;
   color:grey;
@@ -94,9 +94,7 @@ body {
 
 .player {
   z-index:2;
-  position:fixed;
   display:inline;
-  bottom:0;
   font-size:40px;
   text-decoration:none;
   color:grey;
