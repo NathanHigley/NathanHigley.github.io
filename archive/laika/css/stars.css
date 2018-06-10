@@ -15,8 +15,8 @@
     to {background-position:-10000px 5000px;}
 }
 
-.stars, .twinkling {
-  position:absolute;
+.bg, .twinkle {
+  position:fixed;
   top:0;
   left:0;
   right:0;
@@ -26,18 +26,18 @@
   display:block;
 }
 
-.stars {
+.bg {
   background:#000 url(../img/bg.png) repeat top center;
   z-index:-3;
 }
 
-.twinkling{
+.twinkle{
   background:transparent url(../img/twinkle.png) repeat top center;
   z-index:-2;
 
-  -moz-animation:move-twink-back 400s linear infinite;
-  -ms-animation:move-twink-back 400s linear infinite;
-  -o-animation:move-twink-back 400s linear infinite;
-  -webkit-animation:move-twink-back 400s linear infinite;
-  animation:move-twink-back 400s linear infinite;
+  -moz-animation:move-twink-back 600s linear infinite;
+  -ms-animation:move-twink-back 600s linear infinite;
+  -o-animation:move-twink-back 600s linear infinite;
+  -webkit-animation:move-twink-back 600s linear infinite;
+  animation:move-twink-back 600s linear infinite;
 }
