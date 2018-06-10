@@ -35,22 +35,23 @@ body {
   transition:0.3s;
   }
 
- .closebtn {
-  position: absolute;
-  top:0;
-  font-size: 30px;
-  cursor:pointer;
-  }
-
-.openbtn {
-  z-index:1;
-  position:fixed;
+.openbtn, .closebtn {
+  text-shadow: 0px 0px 3px grey;
   top:0;
   font-size:30px;
   cursor:pointer;
   color:grey;
   }
 
+ .closebtn {
+  position: absolute;
+  cursor:pointer;
+  }
+
+.openbtn {
+  z-index:1;
+  position:fixed;
+  }
 
 .con {
   box-shadow: 0px 0px 5px grey;
@@ -85,8 +86,8 @@ body {
   font-size:36px;
   text-decoration:none;
   color:grey;
+  text-shadow: 0px 0px 3px grey;
   }
-
 
 .head, .player, #mainnav, #bib, .sidenav a, .sidebib a {
   -moz-user-select: none;
@@ -94,10 +95,6 @@ body {
   -ms-user-select:none;
   user-select:none;
   -o-user-select:none;
-  }
-
-.openbtn, .closebtn {
-  text-shadow: 0px 0px 3px grey;
   }
 
 .head {
