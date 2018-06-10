@@ -9,7 +9,7 @@ function closeNav() {
 
 function openBib() {
   closeNav()
-  document.getElementById("bib").style.width = "250px";
+  document.getElementById("bib").style.width = "300px";
 }
 
 function closeBib() {

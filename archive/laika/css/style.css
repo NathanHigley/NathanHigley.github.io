@@ -30,6 +30,10 @@ body {
   display: block;
   }
 
+.sidebib a {
+  font-size:20px;
+}
+
 .sidenav a:hover, .sidebib a:hover, .player:hover, .openbtn:hover, .closebtn:hover {
   color: white;
   transition:0.3s;
@@ -68,7 +72,7 @@ body {
   height:100%;
   width:100%;
   background:#414141;
-  opacity:0.5;
+  opacity:0.35;
   }
 
 .link{
