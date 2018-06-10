@@ -17,6 +17,9 @@ function closeBib() {
 }
 
 var audio = new Audio('endless.mp3');
+audio.loop = true;
+audio.volume = 0.5;
+
 function play() {
   audio.muted = true;
   audio.play();
@@ -24,7 +27,7 @@ function play() {
 }
 
 function mute() {
-  audio.muted = true;
+  audio.pause();
 }
 
 function swap(page){
