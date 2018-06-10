@@ -30,7 +30,7 @@ function mute() {
   audio.pause();
 }
 
-function swap(page){
+function swap(page) {
   var id = page.dataset.id;
   var list = document.querySelectorAll(".trans");
 
