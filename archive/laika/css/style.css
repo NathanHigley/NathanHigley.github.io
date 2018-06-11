@@ -138,15 +138,15 @@ body {
   border:solid grey 2px;
 }
 
-.link h2 {
-
-}
-
 .link p {
   text-align:left;
   padding: 0% 3% 0% 3%;
 }
 
 .link img {
-  
+  box-shadow: 0px 0px 5px grey;
+  border:solid grey 3px;
+  border-radius:10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
