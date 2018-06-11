@@ -4,6 +4,7 @@
   }
 
 body {
+  letter-spacing:0.075rem;
   color:white;
   text-shadow: 0px 0px 2px black;
   font-family: "Lato", sans-serif;
