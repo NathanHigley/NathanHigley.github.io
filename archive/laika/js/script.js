@@ -30,6 +30,10 @@ function mute() {
   audio.pause();
 }
 
+function init() {
+  document.getElementById("00").classList.add("trans");
+}
+
 function swap(page) {
   var id = page.dataset.id;
   var list = document.querySelectorAll(".trans");

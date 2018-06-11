@@ -62,7 +62,6 @@ body {
 
 .con {
   box-shadow: 0px 0px 5px grey;
-  min-height:20px;
   position:relative;
   max-width:1100px;
   border:solid grey 3px;
@@ -130,11 +129,19 @@ body {
   width:100%;
 }
 
-.conhead {
+.link h1 {
   letter-spacing:0.3rem;
 }
 
-.conbreak {
+.link hr {
   box-shadow: 0px 0px 5px grey;
   border:solid grey 2px;
+}
+
+.link h2 {
+
+}
+
+.link p {
+  
 }
