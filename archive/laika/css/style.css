@@ -143,5 +143,10 @@ body {
 }
 
 .link p {
+  text-align:left;
+  padding: 0% 3% 0% 3%;
+}
+
+.link img {
   
 }
