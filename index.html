@@ -1,38 +1,65 @@
-<html>
-<head>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script>
-		document.write('<title>' + title + '</title>');
-	</script>
-	<link rel="stylesheet"type="text/css"href="css/media.css"/>
-	<link rel="stylesheet"type="text/css"href="css/style.css"/>
-	<link rel="shortcut icon"href="img/icon.png"/>
-</head>
-<body>
-	<header>
-		<div class="drop"><img id="back"src="img/logo.png"></div>
-		<h1 class="head"id="ban"style="font-size:90;letter-spacing:2rem;">NATHAN HIGLEY</h1>
-		<script>
-			document.write('<h2 class="head"id="ban"style="font-size:40">' + subtitle + '</h2>');
-		</script>
-	</header>
-	<hr style="max-width:1000px;"/><br />
-	<center>
-		<nav>
-			<li><a class="nav"href="index.html">[ INDEX ]</a></li>
-			<li><a class="nav"href="https://github.com/NathanHigley?tab=repositories">[ REPOSITORY ]</a></li>
-			<li><a class="nav"href="archive/index.html">[ ARCHIVE ]</a></li>
-			<li><a class="nav"href="contact.html">[ CONTACT ]</a></li>
-		</nav>
-		<br />
-		<div id="con">
-			<h1 class="head">INDEX</h1>
-			<hr />
-			<p>As seen above, my name is Nathan Higley. Known on the street as Wiggles, I'm an absolute hambone.</p>
-		</div>
-		<!--<footer>
-			<div class="m"><a href="https://nathanhigley.github.io"><img id="bot" src="img/logo.png"></a></div>
-		</footer>!-->
-	</center>
-</body>
+<!DOCTYPE html><html>
+  <head>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/title.js"></script>
+    <script>
+  		document.write('<title>' + title + '</title>');
+  	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon"href="img/favicon.png"/>
+    <link rel="stylesheet"type="text/css"href="css/media.css"/>
+    <link rel="stylesheet"type="text/css"href="css/style.css"/>
+    <link rel="stylesheet"type="text/css"href="css/stars.css"/>
+  </head>
+  <body onload="init();">
+    <div class="bg"></div>
+    <div class="twinkle"></div>
+    <div class="edgebar"style="top:0;"></div>
+    <center style="padding-top:35px;">
+      <div><img class="ban" src="img/logo.png"/></div>
+      <h1 class="head" id="mhead">NATHAN HIGLEY</h1>
+      <h2 class="head" id="shead"><script>document.write(subtitle)</script></h2>;
+  		</script>
+      <br /><hr style="box-shadow: 0px 0px 8px white;max-width:750px; min-width:250px; border:2px solid white; border-radius:5px;"/><br />
+    </center>
+    <div style="left:0;" id="mainLeft" class="sideLeft">
+      <a style="left:0;"href="#" class="closebtn" onclick="closeLeft()">&Xopf;&nbsp;NAVIGATION</a>
+      <a href="#" data-id="01" onclick="swap(this)">LANDING</a>
+      <a href="#" data-id="02" onclick="swap(this)">ARCHIVE</a>
+      <a href="#" data-id="03" onclick="swap(this)">CONTACT</a>
+    </div>
+    <div style="right:0;"id="mainRight" class="sideRight">
+      <a style="right:0;"href="#" class="closebtn" onclick="closeRight()">LINKS&nbsp;&Xopf;</a>
+      <a target="blank"href="">SPACE&nbsp;DUDE</a>
+      <a target="blank"href="">TO&nbsp;BE&nbsp;NAMED</a>
+    </div>
+    <div style="left:10px;" class="openbtn" id="mainLeft" onclick="openLeft()">&#9776;&nbsp;NAV</div>
+    <div style="right:10px;"class="openbtn" id="mainRight" onclick="openRight()">LINKS&nbsp;&#9776;</div>
+    <center>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="link" id="01">
+          <h1>WELCOME</h1>
+          <hr/>
+          <h2>Who am I?</h2>
+          <p style="text-align:center;">Dude guy man who makes websites and sometimes accidently programs.</p>
+        </div>
+        <div class="link" id="02">
+          <h1>ARCHIVE</h1>
+          <hr/>
+          <p>I'll integrate this later, don't worry, I don't have much to look at anyway.</p>
+        </div>
+        <div class="link" id="03">
+          <h1>CONTACT</h1>
+          <hr/>
+          <a style="font-weight:bold;font-size:20px;"href="mailto:nathan@jhigley.com?Subject=Hello%20There." target="_top">nathan@jhigley.com</a></p>
+        </div>
+        <br /><br />
+        <div class="edgebar"style="bottom:0;">
+          <a target="blank"href="https://github.com/NathanHigley"><img src="img/git.png"/></a>
+        </div>
+    </center>
+    <div style="padding-bottom:70px;"></div>
+  </body>
 </html>
