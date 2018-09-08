@@ -9,7 +9,7 @@ body {
   letter-spacing:0.075rem;
   color:white;
   text-shadow: 0px 0px 2px black;
-  font-family: "Lato", sans-serif;
+  font-family:"Lato", sans-serif;
   }
 
 .sideLeft, .sideRight {
@@ -31,6 +31,7 @@ body {
   font-size: 25px;
   color: grey;
   display: block;
+  transition:0.2s;
 }
 
 .sideRight a {
@@ -38,9 +39,9 @@ body {
   padding: 8px 30px 8px 8px;
 }
 
-.sideLeft a:hover, .sideRight a:hover, .player:hover, .openbtn:hover, .closebtn:hover {
+.sideLeft a:hover, .sideRight a:hover, .openbtn:hover, .closebtn:hover {
   color: white;
-  transition:0.3s;
+  transition:0.2s;
   }
 
 .openbtn, .closebtn {
@@ -48,6 +49,7 @@ body {
   top:0;
   cursor:pointer;
   color:grey;
+  transition:0.2s;
   }
 
 .closebtn {
@@ -86,17 +88,7 @@ body {
   display:block;
   }
 
-.player {
-  letter-spacing:0.2rem;
-  z-index:2;
-  display:inline;
-  font-size:36px;
-  text-decoration:none;
-  color:grey;
-  text-shadow: 0px 0px 3px grey;
-  }
-
-.head, .player, #mainLeft, #mainRight, .sideLeft a, .sideRight a {
+.head, #mainLeft, #mainRight, .sideLeft a, .sideRight a {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select:none;
@@ -110,13 +102,13 @@ body {
 
 #mhead {
   font-size:70px;
-  letter-spacing:2rem;
+  letter-spacing:1.6rem;
   text-shadow: 0px 0px 12px white;
   }
 
 #shead {
   font-size:25px;
-  letter-spacing:0.5rem;
+  letter-spacing:0.4rem;
   text-shadow: 0px 0px 8px white;
   }
 
@@ -147,18 +139,20 @@ body {
 .link a {
   text-decoration:none;
   color:white;
+  transition:0.2s;
 }
 
 .link a:hover {
   text-shadow: 0px 0px 3px darkgrey;
+  transition:0.2s;
 }
 
 .ban {
-  filter: blur(1px) drop-shadow(0px 0px 10px lightgrey);
+  filter: blur(1.5px) drop-shadow(0px 0px 10px lightgrey);
   position:absolute;
   left:0;
   right:0;
-  top:35px;
+  top:45px;
   z-index:-1;
   margin:auto;
   height:auto;
@@ -170,11 +164,13 @@ body {
   padding-top:5px;
   width:35px;
   height:auto;
-  filter:blur(0.5px);
+  filter:blur(0.2px);
+  transition:0.2s;
 }
 
 .edgebar img:hover {
-  filter:blur(0.75px) drop-shadow(0px 0px 2px grey);
+  filter:blur(0.4px) drop-shadow(0px 0px 2px grey);
+  transition:0.2s;
 }
 
 .contact {
