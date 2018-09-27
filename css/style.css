@@ -54,7 +54,7 @@ nav div{
 nav img {
   height:100%;
   width:45px;
-  padding: 3px 3px 3px 3px;
+  padding: 6px 3px 6px 3px;
 }
 
 nav a {
@@ -65,8 +65,31 @@ nav a {
   padding: 3px 3px 3px 3px;
 }
 
+.link_con {
+  max-width:600px;
+  height:200px;
+  position:relative;
+}
+
 .link {
+  box-shadow: 0px 0px 5px grey;
+  border:solid grey 3px;
+  border-radius:10px;
+  overflow:hidden;
+  opacity:0.8;
+  background-color:#111;
+  text-align:center;
+  height:100%;
+  width:100%;
+  position:absolute;
   display:none;
+}
+
+.link a {
+  letter-spacing:0.5px;
+  color:grey;
+  text-decoration:none;
+  font-size:30px;
 }
 
 .show {
