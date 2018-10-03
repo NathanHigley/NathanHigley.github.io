@@ -3,21 +3,19 @@ function push(page) {
   var pid = page.dataset.id
   var elem = document.getElementById(pid)
   var list = document.querySelectorAll(".show")
+  var pos = -200;
+  var ext = 280;
 
   function move() {
-    var pos = -50;
-    var ext = 280;
-    var id = setInterval(frame, 30);
+    var id = setInterval(frame, 10);
     function frame() {
-      if (pos >= ext) { //stop here
-        clearInterval(id);
+      if (pos != ext) {
+        pos = pos + 20;
       }
       else {
-        while (pos < ext) {
-          pos++;
-          elem.style.top = pos + 'px';
-        }
+        clearInterval(id);
       }
+      elem.style.top = pos + 'px';
     }
   }
 
@@ -38,7 +36,7 @@ function pull(page) {
   var list = document.querySelectorAll(".show")
 
   function back() {
-    elem.style.top = '-50px';
+    elem.style.top = '-200px';
   }
 
   function unload() {
