@@ -2,6 +2,7 @@
   <head>
     <script type="text/javascript" src="js/title.js"></script>
     <script type="text/javascript" src="js/load.js"></script>
+    <script type="text/javascript" src="js/mission.js"></script>
     <script>
   		document.write('<title>' + title + '</title>');
   	</script>
@@ -19,19 +20,19 @@
       <nav>
         <div><img src="img/favicon.png"/></div>
         <a target="blank" href="https://github.com/NathanHigley"><div>REPOSITORY</div></a>
-        <a href="#" data-id="01" onclick="push(this)"><div>CONTACT</div></a>
+        <a href="#" data-id="01" onclick="swap(this)"><div>MISSION</div></a>
+        <a href="#" data-id="02" onclick="swap(this)"><div>CONTACT</div></a>
       </nav>
     </div>
     <center style="padding-top:35px;">
       <img class="ban" src="img/logo_alt.png"/>
-      <div class="link_con">
-        <div class="link" id="01">
-          <a href="#" data-id="01" onclick="pull(this)" style="position:absolute;right:5px;top:0;">&#9747;</a>
-          <br />
-          <a target="blank" href="mailto:nathan@jhigley.com?Subject=Hello%20There.">nathan@jhigley.com</a>
-          <br /><br />
-          <a target="blank" href="https://docs.google.com/document/d/1LrFwwJx1SDPiFukF9OAt92aDSj2JUk_q-8L_RAiPX5c/">RESUME</a>
-        </div>
+      <div class="link" id="01">
+        <p><script>mission()</script></p>
+      </div>
+      <div class="link" id="02">
+        <a target="blank" href="mailto:nathan@jhigley.com?Subject=Hello%20There.">nathan@jhigley.com</a>
+        <br /><br />
+        <a target="blank" href="">RESUME</a>
       </div>
     </center>
   </body>
