@@ -17,7 +17,8 @@ body {
 .ban {
   transition:1.5s;
   opacity:0.3;
-  top:20%;
+  top:50%;
+  bottom:50%;
   filter: blur(0.75px) drop-shadow(0 0 10px grey);
   position:fixed;
   left:0;
