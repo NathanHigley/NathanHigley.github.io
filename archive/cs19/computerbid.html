@@ -1,0 +1,227 @@
+<!DOCTYPE html><html>
+<head>
+  <title>I bid you adieu.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/media.css"/>
+  <style>
+  * {
+    font-family:Courier;
+  }
+  .btn {
+    border:3px black solid;
+    border-radius:5px;
+    display:inline-block;
+    padding:5px;
+    width:300px;
+    background-color:rgba(100, 100, 100, 0.8);
+    color:rgba(200, 200, 200, 1);
+    box-shadow: 0px 0px 2px black;
+    text-shadow: 0px 0px 8px black;
+    transition:0.3s;
+  }
+  .btn:hover {
+    box-shadow: 0px 0px 5px black;
+    transition:0.3s;
+    opacity:0.9;
+  }
+  a {
+    text-decoration:none;
+  }
+  table {
+    border: 3px black solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    background-color: rgba(50, 50, 50, 0.5);
+    width:800px;
+    padding:5px;
+  }
+  th {
+    color:rgba(180, 180, 180, 1);
+    text-shadow: 0px 0px 8px black;
+  }
+  .rule{
+    font-size:12px;
+  }
+  tr {
+    text-align:center;
+  }
+  td {
+    border:3px black solid;
+    border-radius: 3px;
+    background-color: rgba(100, 100, 100, 1);
+    width:33%;
+  }
+  .table {
+    display:none;
+  }
+  .show{
+    display:block;
+  }
+  .canvas {
+    z-index:-1;
+  	width: 100%;
+    height:100%;
+  	position: fixed;
+    left:0;
+    top:0;
+    overflow: hidden;
+  	background: #7B241C;
+    animation-delay: 1s;
+  	animation-name: light;
+  	animation-duration: 20s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  }
+  @keyframes light {
+  	0% {  background-color: #7B241C; }
+  	20% {  background-color: #1A5276; }
+  	40% { background-color: #117864; }
+  	60% { background-color: #196F3D; }
+  	80% {  background-color: #9C640C; }
+  	100% {  background-color: #7B241C;}
+  }
+  </style>
+  <script>
+  function swap(page) {
+    var id = page.dataset.id;
+    var list = document.querySelectorAll(".show");
+    list.forEach(function(item) {
+      item.classList.remove("show");
+    });
+    document.getElementById(id).classList.add("show");
+  }
+  </script>
+</head>
+<body>
+  <div class="canvas"></div>
+  <br />
+  <center>
+    <a href="#" data-id="01" onclick="swap(this)"><div class="btn">VIRTUAL MACHINE BUILD</div></a>
+    <a href="#" data-id="02" onclick="swap(this)"><div class="btn">HIGH-END GAMING BUILD</div></a>
+    <br /><br />
+    <div class="table" id="01">
+      <table><!--https://pcpartpicker.com/list/TNxKbX-->
+        <th></th><th>TOTAL PRICE: $1061.45</th>
+        <tr>
+          <th class="rule">MODEL</th>
+          <th class="rule">VENDOR</th>
+          <th class="rule">PRICE</th>
+        </tr>
+        <th></th><th>MOTHERBOARD</th>
+        <tr>
+          <td>MSI - B450 TOMAHAWK</td>
+          <td>B&H</td>
+          <td>$114.99</td>
+        </tr>
+        <th></th><th>PROCESSOR</th>
+        <tr>
+          <td>AMD - RYZEN 7 2700X</td>
+          <td>SuperBiiz</td>
+          <td>$319.99</td>
+        </tr>
+        <th></th><th>COOLANT</th>
+        <tr>
+          <td>CM - Hyper 212</td>
+          <td>Amazon</td>
+          <td>$25.83</td>
+        </tr>
+        <th></th><th>DRIVE</th>
+        <tr>
+          <td>SAMSUNG - 860 1TB SSD</td>
+          <td>Amazon</td>
+          <td>$127.98</td>
+        </tr>
+        <th></th><th>STORAGE</th>
+        <tr>
+          <td>WD - 1TB HDD</td>
+          <td>Amazon</td>
+          <td>$59.99</td>
+        </tr>
+        <th></th><th>POWER</th>
+        <tr>
+          <td>CORSAIR - CXM 450W ATX</td>
+          <td>OutletPC</td>
+          <td>$49.89</td>
+        </tr>
+        <th></th><th>MEMORY</th>
+        <tr>
+          <td>G.Skill - Trident Z 32GB</td>
+          <td>Newegg</td>
+          <td>$304.99</td>
+        </tr>
+        <th></th><th>CASE</th>
+        <tr>
+          <td>CORSAIR - 200R</td>
+          <td>Newegg</td>
+          <td>$49.99</td>
+        </tr>
+      </table>
+    </div>
+    <div class="table" id="02">
+      <table><!--https://pcpartpicker.com/list/gB4QNQ-->
+        <th></th><th>TOTAL PRICE: $2353.68</th>
+        <tr>
+          <th class="rule">MODEL</th>
+          <th class="rule">VENDOR</th>
+          <th class="rule">PRICE</th>
+        </tr>
+        <th></th><th>MOTHERBOARD</th>
+        <tr>
+          <td>ASUS - Prime Z370-A</td>
+          <td>Newegg</td>
+          <td>$159.99</td>
+        </tr>
+        <th></th><th>PROCESSOR</th>
+        <tr>
+          <td>Intel - Core i9-9900K</td>
+          <td>Amazon</td>
+          <td>$549.99</td>
+        </tr>
+        <th></th><th>COOLANT</th>
+        <tr>
+          <td>CORSAIR - H150i PRO</td>
+          <td>Newegg</td>
+          <td>$129.99</td>
+        </tr>
+        <th></th><th>DRIVE</th>
+        <tr>
+          <td>SAMSUNG - 860 1TB SSD</td>
+          <td>Amazon</td>
+          <td>$127.98</td>
+        </tr>
+        <th></th><th>STORAGE</th>
+        <tr>
+          <td>SEAGATE - 8TB HDD</td>
+          <td>Newegg</td>
+          <td>$129.99</td>
+        </tr>
+        <th></th><th>POWER</th>
+        <tr>
+          <td>EVGA - BQ 500W</td>
+          <td>OutletPC</td>
+          <td>$43.79</td>
+        </tr>
+        <th></th><th>MEMORY</th>
+        <tr>
+          <td>G.Skill - Trident Z 32GB</td>
+          <td>Newegg</td>
+          <td>$304.99</td>
+        </tr>
+        <th></th><th>CASE</th>
+        <tr>
+          <td>Phanteks - Enthoo Pro</td>
+          <td>Newegg</td>
+          <td>$99.99</td>
+        </tr>
+        <th></th><th>VIDEO</th>
+        <tr>
+          <td>EVGA - GeForce GTX 1080Ti</td>
+          <td>Newegg</td>
+          <td>$804.98</td>
+        </tr>
+      </table>
+    </div>
+  </center>
+</body>
+</html>
