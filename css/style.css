@@ -3,6 +3,14 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  user-select:none;
+  -o-user-select:none;
+}
+
 .edgebar {
   top:0;
   left:0;
@@ -25,7 +33,7 @@ body {
   right:0;
   z-index:-1;
   margin:auto;
-  max-height:1080px;
+  max-height:50%;
   width:auto;
 }
 
@@ -44,7 +52,8 @@ nav a:hover {
   transition:0.3s;
   background-color:white;
   border: 1px #111;
-  border-radius:3px;
+  color:black;
+  text-shadow: 0px 0px 1px black;
 }
 
 nav div{
@@ -62,7 +71,7 @@ nav a {
   display:inline-block;
   transition:0.3s;
   text-decoration:none;
-  color:grey;
+  color:white;
   padding: 3px 3px 3px 3px;
 }
 
@@ -84,6 +93,8 @@ nav a {
 }
 
 .link a {
+  border-left: 0 solid grey;
+  border-right: 0 solid grey;
   padding: 5px 5px 5px 5px;
   transition:0.3s;
   letter-spacing:0.5px;
@@ -99,7 +110,10 @@ nav a {
 }
 
 .link a:hover {
+  border-left: 3px solid grey;
+  border-right: 3px solid grey;
   transition:0.3s;
+  color:white;
   text-shadow: 0px 0px 3px grey;
 }
 

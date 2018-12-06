@@ -16,19 +16,19 @@
 }
 @keyframes move-bg {
     from {background-position:0 0;}
-    to {background-position:10000px 0;}
+    to {background-position:14000px 0;}
 }
 @-webkit-keyframes move-bg {
     from {background-position:0 0;}
-    to {background-position:10000px 0;}
+    to {background-position:14000px 0;}
 }
 @-moz-keyframes move-bg {
     from {background-position:0 0;}
-    to {background-position:10000px 0;}
+    to {background-position:14000px 0;}
 }
 @-ms-keyframes move-bg {
     from {background-position:0 0;}
-    to {background-position:10000px 0;}
+    to {background-position:14000px 0;}
 }
 
 .bg, .twinkle {
