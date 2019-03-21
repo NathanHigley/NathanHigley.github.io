@@ -1,0 +1,94 @@
+<!DOCTYPE html><html>
+  <head><title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        background:linear-gradient(to right, grey, white);
+        font-family: sans-serif;
+      }
+      h1, h2, h3 {
+        text-shadow: 0 0 2px black;
+      }
+      p {
+        text-shadow: 0 0 2px black;
+      }
+      hr {
+        box-shadow: 0 0 2px black;
+        border:2px solid black;
+        border-radius:3px;
+        width:66%;
+      }
+      .mid, .bottom {
+        box-shadow: 0 0 3px black;
+        border:4px solid black;
+        border-radius:15px;
+        display:inline-block;
+        vertical-align:top;
+        overflow:hidden;
+        width:33%;
+      }
+      .mid hr, .bottom hr {
+        box-shadow: 0 0 1px black;
+        border-radius:0px;
+        width:100%;
+      }
+      .mid {
+        height:180px;
+      }
+      .bottom {
+        height:125px;
+      }
+      p {
+        padding: 0 5px 0 5px;
+      }
+      .canvas {
+        background-color:lightgrey;
+        z-index:-1;
+        width: 100%;
+        height:100%;
+        overflow: hidden;
+      }
+      .canvas:hover {
+        animation-delay: 0s;
+      	animation-name: bg;
+      	animation-duration: 3s;
+      	animation-iteration-count: infinite;
+      	animation-timing-function: linear;
+      }
+      @keyframes bg {
+      	0% { background-color: lightgrey; }
+      	50% { background-color: white; }
+      	100% { background-color: lightgrey; }
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>SESSION | INTERNET COMMUNICATION</h1>
+      <h2>Open Systems Interconnection Model - Layer 5</h2>
+      <hr /><br />
+      <div class="mid"><div class="canvas">
+        <h3>What does it do?</h3><hr />
+        <p>The session layer provides the mechanism for opening, closing and managing a session between end-user application processes. Communication sessions consist of requests and responses that occur between applications.</p></div>
+      </div>
+      <div class="mid"><div class="canvas">
+        <h3>Where does it do this?</h3><hr />
+        <p>Session-layer services are commonly used in application environments that make use of remote procedure calls (RPCs).</p></div>
+      </div><br /><br />
+      <div class="mid"><div class="canvas">
+        <h3>How does this work with other layers?</h3> <hr />
+        <p>Within the service layering semantics of the OSI network architecture, the session layer responds to service requests from the presentation layer and issues service requests to the transport layer.</p></div>
+      </div>
+      <br /><br /><hr /><br />
+      <div class="bottom"><div class="canvas">
+        <h3>SERVICES</h3><hr />
+        <p>Authentication, Authorization, Session Restoration</p></div>
+      </div>
+      <div class="bottom"><div class="canvas">
+        <h3>PROTOCOLS</h3><hr />
+        <p>SQL (Structured Query Language) | SOCKS</p></div>
+      </div>
+    </center>
+  </body>
+</html>
