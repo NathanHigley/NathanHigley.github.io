@@ -1,0 +1,59 @@
+<!DOCTYPE html><html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <audio id="press"><source src="press.mp3" type="audio/mpeg"></audio>
+    <script type="text/javascript">function play(){document.getElementById("press").play;}</script>
+    <script type="text/javascript">function init_link(){document.getElementById("00").classList.add("show");}</script>
+    <script type="text/javascript" src="js/load.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/project.js"></script>
+    <script type="text/javascript" src="js/challenges.js"></script>
+    <script type="text/javascript" src="js/satisfaction.js"></script>
+    <script type="text/javascript" src="js/plans.js"></script>
+    <script type="text/javascript" src="js/tritech.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stars.css"/>
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <title>[NH] CS2019</title>
+  </head>
+  <body onload="init_link()">
+    <div class="bg"/>
+    <div class="twinkle"/>
+    <div class="edgebar"/>
+      <nav>
+        <a href="#" data-id="00" onclick="swap(this), play()"><div><img src="img/favicon.png"/></div></a>
+        <a href="#" data-id="01" onclick="swap(this), play()"><div>INTRO</div></a>
+        <a href="#" data-id="02" onclick="swap(this), play()"><div>PROJECT</div></a>
+        <a href="#" data-id="03" onclick="swap(this), play()"><div>CHALLENGES</div></a>
+        <a href="#" data-id="04" onclick="swap(this), play()"><div>SATISFACTION</div></a>
+        <a href="#" data-id="05" onclick="swap(this), play()"><div>PLANS</div></a>
+        <a href="#" data-id="06" onclick="swap(this), play()"><div>TRI-TECH</div></a>
+      </nav>
+    </div>
+    <center style="padding-top:35px;">
+      <div class="link_init" id="00">
+        <a href=""><img class="ban" src="img/logo_alt.png"/></a>
+      </div>
+      <div class="link" id="01">
+        <script>intro()</script>
+      </div>
+      <div class="link" id="02">
+        <script>project()</script>
+      </div>
+      <div class="link" id="03">
+        <script>challenges()</script>
+      </div>
+      <div class="link" id="04">
+        <script>satisfaction()</script>
+      </div>
+      <div class="link" id="05">
+        <script>plans()</script>
+      </div>
+      <div class="link" id="06">
+        <script>tritech()</script>
+      </div>
+    </center>
+  </body>
+</html>

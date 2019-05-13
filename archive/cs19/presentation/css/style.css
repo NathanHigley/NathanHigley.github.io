@@ -1,0 +1,139 @@
+body {
+  color:white;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  user-select:none;
+  -o-user-select:none;
+}
+
+.edgebar {
+  top:0;
+  left:0;
+  z-index:1;
+  background-color: #111;
+  position:fixed;
+  overflow:hidden;
+  height:45px;
+  width:100%;
+}
+
+.ban {
+  transition:1.5s;
+  opacity:0.3;
+  top:50%;
+  bottom:50%;
+  filter: blur(0.75px) drop-shadow(0 0 10px grey);
+  position:fixed;
+  left:0;
+  right:0;
+  z-index:-1;
+  margin:auto;
+  max-height:50%;
+  width:auto;
+}
+
+.ban:hover {
+  filter: blur(0px) drop-shadow(0 0 10px white);
+  transition:1.5s;
+  opacity:1;
+}
+
+nav {
+  height:100%;
+  display: flex;
+}
+
+nav a {
+  display:inline-block;
+  transition:0.3s;
+  text-decoration:none;
+  color:rgb(145, 145, 145);
+  padding: 3px 3px 3px 3px;
+}
+
+nav a:hover {
+  transition:0.3s;
+  background-color:white;
+  border: 1px #111;
+  color:black;
+  text-shadow: 0px 0px 1px black;
+}
+
+nav div{
+  line-height:37px;
+  padding: 0 3px 0 3px;
+}
+
+nav img {
+  height:100%;
+  width:45px;
+  padding: 3px 5px 3px 3px;
+}
+
+
+.link_init, .link {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+.link {
+  margin:auto;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:10%;
+  box-shadow: 0px 0px 5px grey;
+  border:solid grey 3px;
+  border-radius:10px;
+  overflow:hidden;
+  background: rgba(50, 50, 50, 0.4);
+  min-width:300px;
+  max-width:75%;
+}
+
+.link p {
+  padding: 0px 15px 0px 15px;
+  text-align:left;
+}
+
+.link a {
+  border-left: 0 solid grey;
+  border-right: 0 solid grey;
+  padding: 5px 5px 5px 5px;
+  transition:0.2s;
+  letter-spacing:0.5px;
+  color:grey;
+  text-align:center;
+  text-decoration:none;
+  font-size:5vw;
+}
+
+.link a:hover {
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+  transition:0.2s;
+  color:white;
+  text-shadow: 0px 0px 1vw grey;
+}
+
+@media screen and (min-width: 1200px) {
+  .link a {
+    font-size: 30px;
+  }
+  .link a:hover{
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    text-shadow: 0px 0px 3px grey;
+  }
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+}

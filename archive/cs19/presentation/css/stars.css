@@ -1,0 +1,65 @@
+@keyframes move-t {
+    from {background-position:0 0;}
+    to {background-position: 0 5000px;}
+}
+@-webkit-keyframes move-t {
+    from {background-position:0 0;}
+    to {background-position: 0 5000px;}
+}
+@-moz-keyframes move-t {
+    from {background-position:0 0;}
+    to {background-position: 0 5000px;}
+}
+@-ms-keyframes move-t {
+    from {background-position:0 0;}
+    to {background-position: 0 5000px;}
+}
+@keyframes move-bg {
+    from {background-position:0 0;}
+    to {background-position:14000px 0;}
+}
+@-webkit-keyframes move-bg {
+    from {background-position:0 0;}
+    to {background-position:14000px 0;}
+}
+@-moz-keyframes move-bg {
+    from {background-position:0 0;}
+    to {background-position:14000px 0;}
+}
+@-ms-keyframes move-bg {
+    from {background-position:0 0;}
+    to {background-position:14000px 0;}
+}
+
+.bg, .twinkle {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.bg {
+  background:#000 url(../img/bg.png) repeat top center;
+  z-index:-3;
+
+  -moz-animation:move-bg 400s linear infinite;
+  -ms-animation:move-bg 400s linear infinite;
+  -o-animation:move-bg 400s linear infinite;
+  -webkit-animation:move-bg 400s linear infinite;
+  animation:move-bg 400s linear infinite;
+}
+
+.twinkle {
+  background:transparent url(../img/twinkle.png) repeat top center;
+  z-index:-2;
+
+  -moz-animation:move-t 1000s linear infinite;
+  -ms-animation:move-t 1000s linear infinite;
+  -o-animation:move-t 1000s linear infinite;
+  -webkit-animation:move-t 1000s linear infinite;
+  animation:move-t 1000s linear infinite;
+}
