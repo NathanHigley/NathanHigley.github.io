@@ -1,41 +1,45 @@
 <!DOCTYPE html><html>
   <head>
-    <script type="text/javascript" src="js/title.js"></script>
-    <script type="text/javascript" src="js/load.js"></script>
-    <script type="text/javascript" src="js/about.js"></script>
-    <script>
-  		document.write('<title>' + title + '</title>');
-  	</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/favicon.png"/>
+    <script type="text/javascript">function init_link(){document.getElementById("00").classList.add("show");}</script>
+    <script type="text/javascript" src="js/title.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
+    <script type="text/javascript" src="js/archive.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
     <link rel="stylesheet" type="text/css" href="css/media.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/stars.css"/>
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <script>
+  		document.write('<title>' + title + '</title>');
+  	</script>
   </head>
-  <body>
-    <div class="bg"></div>
-    <div class="twinkle"></div>
-    <div class="edgebar">
+  <body onload="init_link()">
+    <div class="bg"/>
+    <div class="twinkle"/>
+    <div class="edgebar"/>
       <nav>
-        <div><img src="img/favicon.png"/></div>
-        <a target="blank" href="https://github.com/NathanHigley"><div>REPOSITORY</div></a>
-        <a href="#" data-id="00" onclick="swap(this)"><div>ARCHIVE</div></a>
-        <a href="#" data-id="01" onclick="swap(this)"><div>ABOUT</div></a>
-        <a href="#" data-id="02" onclick="swap(this)"><div>CONTACT</div></a>
+        <a href="#" data-id="00" onclick="swap(this)"><div><img src="img/favicon.png"/></div></a>
+        <a href="#" data-id="01" onclick="swap(this)"><div>ARCHIVE</div></a>
+        <a href="#" data-id="02" onclick="swap(this)"><div>ABOUT</div></a>
+        <a href="#" data-id="03" onclick="swap(this)"><div>CONTACT</div></a>
       </nav>
     </div>
     <center style="padding-top:35px;">
-      <img class="ban" src="img/logo_alt.png"/>
-      <div class="link" id="00">
-        <a target="blank" href="http://nathanhigley.github.io/archive/cs19/computerbid.html">BID</a>
-        <a target="blank" href="http://nathanhigley.github.io/archive/laika/index.html">LAIKA</a>
+      <div class="link_init" id="00">
+        <a href="http://www.github.com/NathanHigley"><img class="ban" src="img/logo_alt.png"/></a>
       </div>
       <div class="link" id="01">
-        <p><script>about()</script></p>
+        <script>archive()</script>
       </div>
       <div class="link" id="02">
-        <a target="blank" href="mailto:nathan@jhigley.com?Subject=Hello%20There.">nathan@jhigley.com</a>
+        <script>about()</script>
+      </div>
+      <div class="link" id="03">
+        <script>contact()</script>
+      </div>
       </div>
     </center>
   </body>
