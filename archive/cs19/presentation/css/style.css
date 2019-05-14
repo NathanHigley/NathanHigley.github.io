@@ -1,13 +1,13 @@
 body {
   color:white;
-  font-family: "Lato", sans-serif;
+  font-family:"Lato", sans-serif;
 }
 
 img {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select:none;
   user-select:none;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
   -o-user-select:none;
 }
 
@@ -45,7 +45,7 @@ img {
 
 nav {
   height:100%;
-  display: flex;
+  display:flex;
 }
 
 nav a {
@@ -53,59 +53,57 @@ nav a {
   transition:0.3s;
   text-decoration:none;
   color:rgb(145, 145, 145);
-  padding: 3px 3px 3px 3px;
+  padding:3px 3px 3px 3px;
 }
 
 nav a:hover {
   transition:0.3s;
   background-color:white;
-  border: 1px #111;
+  border:1px #111;
   color:black;
-  text-shadow: 0px 0px 1px black;
+  text-shadow:0px 0px 1px black;
 }
 
-nav div{
+nav div {
   line-height:37px;
-  padding: 0 3px 0 3px;
+  padding:0 3px 0 3px;
 }
 
 nav img {
   height:100%;
   width:45px;
-  padding: 3px 5px 3px 3px;
+  padding:3px 5px 3px 3px;
 }
-
 
 .link_init, .link {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0.4s, opacity 0.4s linear;
-}
-
-.link {
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0s 0.4s, opacity 0.4s linear;
   margin:auto;
   position:absolute;
   left:0;
   right:0;
-  bottom:10%;
-  box-shadow: 0px 0px 5px grey;
+  top:10%;
+}
+
+.link_con {
+  box-shadow:0px 0px 5px grey;
   border:solid grey 3px;
   border-radius:10px;
-  overflow:hidden;
-  background: rgba(50, 50, 50, 0.4);
+  background:rgba(50, 50, 50, 0.4);
   min-width:300px;
   max-width:75%;
 }
 
-.link p {
-  padding: 0px 15px 0px 15px;
+.link_con p {
+  padding:0px 15px 0px 15px;
   text-align:left;
 }
 
-.link a {
-  border-left: 0 solid grey;
-  border-right: 0 solid grey;
-  padding: 5px 5px 5px 5px;
+.link_con a {
+  border-left:0 solid grey;
+  border-right:0 solid grey;
+  padding:5px 5px 5px 5px;
   transition:0.2s;
   letter-spacing:0.5px;
   color:grey;
@@ -114,26 +112,26 @@ nav img {
   font-size:5vw;
 }
 
-.link a:hover {
-  border-left: 2px solid grey;
-  border-right: 2px solid grey;
+.link_con a:hover {
+  border-left:2px solid grey;
+  border-right:2px solid grey;
   transition:0.2s;
   color:white;
-  text-shadow: 0px 0px 1vw grey;
+  text-shadow:0px 0px 1vw grey;
 }
 
 @media screen and (min-width: 1200px) {
-  .link a {
-    font-size: 30px;
+  .link_con a {
+    font-size:30px;
   }
-  .link a:hover{
-    border-left: 3px solid grey;
-    border-right: 3px solid grey;
-    text-shadow: 0px 0px 3px grey;
+  .link_con a:hover{
+    border-left:3px solid grey;
+    border-right:3px solid grey;
+    text-shadow:0px 0px 3px grey;
   }
 }
 .show {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.4s linear;
+  visibility:visible;
+  opacity:1;
+  transition:opacity 0.4s linear;
 }

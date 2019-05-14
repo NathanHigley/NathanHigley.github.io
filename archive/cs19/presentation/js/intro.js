@@ -1,4 +1,8 @@
 function intro(){document.write(`
-  <p>aeiou</p>
-  <p>:^)</p>
+  <img src="img/logo_alt.png"/><br /><br />
+  <div class="link_con">
+  <h1>Hello! I'm Nathan Higley.</h1><hr />
+  <h3>I hit drums and keys at high velocities.</h3>
+  <h6>..Moving on.</h6>
+  </div>
 `);}
