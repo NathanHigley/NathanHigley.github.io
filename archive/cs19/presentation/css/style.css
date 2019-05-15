@@ -86,6 +86,11 @@ nav img {
   top:10%;
 }
 
+.link img {
+  max-height:350px;
+  width:auto;
+}
+
 .link_con {
   box-shadow:0px 0px 5px grey;
   border:solid grey 3px;
