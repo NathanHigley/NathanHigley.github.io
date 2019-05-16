@@ -1,5 +1,5 @@
 var titles = new Array(
-  'You\'re Not Made of Tuesday",
+  'You\'re Not Made of Tuesday',
   'When in Rome, Sink Ships',
   'TUMS&#174 Festival',
   'Another Happy Landing',

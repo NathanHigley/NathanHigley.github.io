@@ -19,6 +19,7 @@ function work_19(){document.write(`
   <img src="img/logo_alt.png"/><br /><br />
   <div class="link_con">
   <h1>2019 Archive</h1><hr />
-  <h3><a target="_blank" href="archive/cs19/presentation/index.html">FINAL</a></h3>
+  <h3><a target="_blank" href="archive/cs19/presentation/index.html">FINAL</a>
+  <a target="_blank" href="archive/cs19/computerbid.html">BID</a></h3>
   </div>
 `);}
