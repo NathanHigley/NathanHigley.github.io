@@ -89,6 +89,7 @@ nav img {
 .link img {
   max-height:50%;
   width:auto;
+  padding:3px 3px 3px 3px;
 }
 
 .link_con {
