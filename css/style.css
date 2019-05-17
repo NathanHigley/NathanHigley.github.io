@@ -83,7 +83,7 @@ nav img {
   position:absolute;
   left:0;
   right:0;
-  top:10%;
+  top:15%;
 }
 
 .link img {
@@ -96,8 +96,7 @@ nav img {
   border:solid grey 3px;
   border-radius:10px;
   background:rgba(50, 50, 50, 0.4);
-  min-width:300px;
-  max-width:75%;
+  max-width:85%;
 }
 
 .link_con p {
