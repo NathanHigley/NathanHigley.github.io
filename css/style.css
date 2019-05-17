@@ -87,9 +87,8 @@ nav img {
 }
 
 .link img {
-  max-height:50%;
-  width:auto;
-  padding:3px 3px 3px 3px;
+  max-width: 50%;
+  height:auto;
 }
 
 .link_con {
@@ -136,6 +135,7 @@ nav img {
     text-shadow:0px 0px 3px grey;
   }
 }
+
 .show {
   visibility:visible;
   opacity:1;
