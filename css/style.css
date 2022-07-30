@@ -1,0 +1,43 @@
+html {
+	font-family: sans-serif;
+	background-color: rgba(50, 45, 50, 1);
+	color: rgb(175, 175, 175);
+}
+
+section {
+	position: absolute;
+	top: 50%;
+    left: 0%;
+    right: 0%;
+	transform: translateY(-50%);
+}
+
+section h1 {
+    font-weight: 700;
+	font-size: 3em;
+}
+
+section h2 {
+	font-size: 1.2em;
+	padding-bottom: 1.5em;
+}
+
+section div {
+    display: inline-block;
+    width:30%
+}
+
+section p {
+	font-size: 1em;
+    padding-bottom: 1.5em;
+}
+
+section a:link, section a:visited {
+    word-wrap: break-word;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+  }
+  
+section a:hover, section a:active {
+    color: rgb(230, 225, 230);
+  }
